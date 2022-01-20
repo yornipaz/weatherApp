@@ -11,7 +11,7 @@ a {
   }
   
   a:focus {
-    outline: none !important;
+    outline: none ;
   }
   
   a:hover {
@@ -38,6 +38,3 @@ button:hover {
     cursor: pointer;
 }
 
-.login-form {
-  width: 100%;
-}
