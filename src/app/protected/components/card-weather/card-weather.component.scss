@@ -1,0 +1,116 @@
+.frame {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(to top, #40334f, #2f273c, #272232, #201c29);
+    color: #4b384c;
+    font-family: 'overlock', Helvetica, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+  
+  
+  
+  .front {
+    position: absolute;
+    z-index: 10;
+    width: 400px;
+    height: 140px;
+    left: 0;
+    bottom: -63px;
+    background: #fff;
+    box-shadow: -1rem 0 1rem rgba(0, 0, 0, .5);
+    animation: slide 1s;
+    transition: 1s ease-in-out;
+    z-index: 1000;
+  
+    &:hover {
+      bottom: 0;
+    }
+  }
+  .title-city{
+    color: #d1baca;
+    font-family: Roboto,sans-serif;
+    font-style: oblique;
+    margin-bottom: 5px;
+  }
+  
+  .content-city{
+      position: absolute;
+      width: 100%;
+      top: 20%;
+  
+      text-align: center;
+  }
+  .img-weather{
+      width: 120px;
+      height: 120px;
+  
+  }
+  @keyframes slide {
+  
+    0%,
+    45% {
+      transform: translateY(90px);
+    }
+  
+    to {
+      transform: translateY(0px);
+    }
+  }
+  
+  .front .temperature {
+    float: left;
+    margin-left: 20px;
+    font-size: 45px;
+    line-height: 90px;
+  }
+  
+  .front .info {
+    float: left;
+    margin: 2rem 0 0 3rem;
+    font-size: 1.2rem;
+    line-height: 20px;
+  }
+  
+  .icons {
+    position: absolute;
+    top: 1.5rem;
+    left: 6.3rem;
+    line-height: 20px;
+    margin-right: 12px;
+  }
+  
+  .front .preview {
+    float: right;
+    font-weight: 400;
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 20px;
+    margin: 25px 20px 0 0;
+  }
+  
+  .front .preview td {
+    padding: 0 3px;
+    text-transform: uppercase;
+  }
+  .proverb {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    text-align: center;
+    width: 100%;
+    padding: .5rem 0;
+    background: #d1baca;
+    height: 100%;
+  }
+  

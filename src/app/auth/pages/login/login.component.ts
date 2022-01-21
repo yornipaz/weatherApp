@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -12,11 +14,21 @@ export class LoginComponent  {
     password:['',[Validators.required,Validators.minLength(8)]]
   });
 
-  constructor(private fb:FormBuilder) { }
+  constructor(private fb:FormBuilder,private router:Router,private userService:UserService) { }
+  
   login(event: Event){
     event.preventDefault();
-    console.log(this.loginForm.value);
-    console.log(this.loginForm.valid)
+    const { email, password } = this.loginForm.value;
+    this.userService.login(email,password).subscribe(resp=>{
+     
+      if ( resp.ok=== true ) {
+        this.router.navigateByUrl('/dashboard');
+      } else {
+        console.log('Error', resp.msg, 'error');
+      }
+    })
+
+
   }
 
  

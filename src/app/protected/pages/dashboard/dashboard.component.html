@@ -1,1 +1,13 @@
-<p>dashboard works!</p>
+<mat-toolbar color="primary">
+
+    <span>WeatherApp</span>
+    <span class="example-spacer"></span>
+    <button mat-button routerLink="./search">Consultar</button>
+    <button mat-button routerLink="./history">Historial</button>
+    
+    <button (click)="logout()" mat-icon-button >
+      <mat-icon aria-hidden="false" aria-label="Example home icon">logout</mat-icon>
+    </button>
+    
+  </mat-toolbar>
+  <router-outlet></router-outlet>

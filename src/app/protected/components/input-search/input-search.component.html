@@ -1,0 +1,19 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSearch($event)" >
+  <mat-form-field class="example-full-width" appearance="fill">
+    
+    <input matInput 
+    autofocus
+    autocomplete
+    type="text"
+    class="form-control"
+    placeholder=" Typing search "
+    formControlName="city"
+
+     >
+    <button [disabled]="searchForm.invalid"type="submit" mat-icon-button >
+      <mat-icon color="primary">search</mat-icon>
+    </button>
+    
+  </mat-form-field>
+</form>
+
