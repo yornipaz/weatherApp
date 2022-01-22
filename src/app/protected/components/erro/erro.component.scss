@@ -1,0 +1,74 @@
+$light-grey: #e0e2f4;
+$grey: #aaaaaa;
+$blue: #0414a7;
+
+$base-font-size: 20px;
+$font-stack: 'VT323', monospace;
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a { color: $light-grey; }
+
+body,
+p { font: normal #{$base-font-size}/1.25rem $font-stack; }
+h1 { font: normal 2.75rem/1.05em $font-stack; }
+
+
+
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 640px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-error{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 50px;
+}
+p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+}
+.bsod {
+  padding-top: 4%;
+  
+  .neg {
+    text-align: center;
+    color: #7b1fa2;
+    
+    .bg {
+      background: $light-grey;
+      padding: 0 15px 2px 13px;
+    }
+  }
+  .title { margin-bottom: 50px; }
+  .nav {
+    margin-top: 35px;
+    text-align: center;
+    
+    .link {
+      text-decoration: none;
+      padding: 0 9px 2px 8px;
+      font-size: 20px;
+      background: $light-grey;
+      color: #7b1fa2;
+      
+      &:hover,
+      &:focus {
+        background: $light-grey;
+        color:$light-grey;
+      }
+    }
+  }
+}
+

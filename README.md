@@ -1,4 +1,20 @@
-# WeatherApp
+## WeatherApp
+## Descripción 
+Esta aplicación permite consultar  el clima de una ciudad, y mostrar la temperatura, humedad, velocidad del viento, presurización, entre entras variables climáticas.
+## Tecnologia implementadas 
+
+- Angular 
+- Material para angular 
+- Backend (node,express,jwt) para la autenticación de la aplicación
+## APIS utilizadas 
+- openweather link => https://api.openweathermap.org/
+## intruciones para correr la app
+- Clonar el repositorio en el computador
+- Abrir la carpeta en el editor de preferencia o en la terminal 
+- Correr el comando npm install
+- Correr ng serve -o 
+-- NOTA ANTES DE CORRER LA APP DE FRONTEND DEBE ESTAR CORRIERDO LA DEL BACKEND
+-- backend => https://github.com/yornipaz/weatherApp-backend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.13.
 

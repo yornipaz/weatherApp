@@ -10,6 +10,8 @@ import { TableHistoryComponent } from './components/table-history/table-history.
 import { InputSearchComponent } from './components/input-search/input-search.component';
 import { CardWeatherComponent } from './components/card-weather/card-weather.component';
 import { MaterialModule } from './shared/material/material.module';
+import {  HttpClientModule } from '@angular/common/http';
+import { ErroComponent } from './components/erro/erro.component';
 
 
 @NgModule({
@@ -19,12 +21,14 @@ import { MaterialModule } from './shared/material/material.module';
     SearchComponent,
     TableHistoryComponent,
     InputSearchComponent,
-    CardWeatherComponent
+    CardWeatherComponent,
+    ErroComponent
   ],
   imports: [
     CommonModule,
     ProtectedRoutingModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
 
     
     

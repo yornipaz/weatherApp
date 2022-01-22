@@ -4,6 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
+import {MatPaginatorModule} from '@angular/material/paginator';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatButtonModule,
     ReactiveFormsModule,
-    MatInputModule
+    MatInputModule,
+    MatPaginatorModule
   ],
   exports: [
     MatToolbarModule,
@@ -24,7 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatIconModule,
     ReactiveFormsModule,
-    MatInputModule
+    MatInputModule,
+    MatPaginatorModule
 
   ],
 })

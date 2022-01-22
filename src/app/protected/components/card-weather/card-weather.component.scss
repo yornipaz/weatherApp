@@ -70,7 +70,7 @@
   .front .temperature {
     float: left;
     margin-left: 20px;
-    font-size: 45px;
+    font-size: 20px;
     line-height: 90px;
   }
   
@@ -89,7 +89,7 @@
     margin-right: 12px;
   }
   
-  .front .preview {
+  .front  {
     float: right;
     font-weight: 400;
     text-align: right;
@@ -97,10 +97,17 @@
     line-height: 20px;
     margin: 25px 20px 0 0;
   }
-  
+  .preview{
+    float: right;
+    font-weight: 400;
+    text-align: right;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 25px 20px 0 0;
+  }
   .front .preview td {
     padding: 0 3px;
-    text-transform: uppercase;
+    
   }
   .proverb {
     font-size: 1.3rem;

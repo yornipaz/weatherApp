@@ -1,1 +1,62 @@
-<p>table-history works!</p>
+<div class="container">
+  <div *ngIf="listSearches.length>0">
+    <mat-toolbar class="title-pages">
+      <span class="title-pages">Historial de busqueda.</span>
+      <button mat-raised-button color="primary" (click)="deleteSearch()">
+        Eliminar busquedas
+        <mat-icon>delete_forever</mat-icon>
+      </button>
+    </mat-toolbar>
+    <div class="center">
+      <span class="title">Filtar datos de Busqueda :</span>
+      <mat-form-field appearance="legacy">
+        <mat-label color="primary">Filter</mat-label>
+        <input
+          color="primary"
+          matInput
+          (keyup)="applyFilter($event)"
+          placeholder="Filtrar "
+          #input
+        />
+
+        <mat-icon>filter_alt</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef>No.</th>
+          <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="city">
+          <th mat-header-cell *matHeaderCellDef>Ciudad</th>
+          <td mat-cell *matCellDef="let element">{{ element.city }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="date">
+          <th mat-header-cell *matHeaderCellDef>Fecha</th>
+          <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+        </ng-container>
+        <ng-container matColumnDef="hour">
+          <th mat-header-cell *matHeaderCellDef>Hora</th>
+          <td mat-cell *matCellDef="let element">{{ element.hour }}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+      <mat-paginator
+        [pageSizeOptions]="[5, 10, 20]"
+        showFirstLastButtons
+        aria-label="Select page of periodic elements"
+      >
+      </mat-paginator>
+    </div>
+  </div>
+  <div *ngIf="!listSearches.length" >
+    <app-erro></app-erro>
+
+  </div>
+</div>

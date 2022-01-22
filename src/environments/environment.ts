@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   baseUrls:{
     api:'http://localhost:3006/api/auth',
-    openweather:'https://sapi.openweathermap.org/data/2.5/weather'
+    openweather:'https://api.openweathermap.org/data/2.5/weather'
   },
   apiKey:'657b71e064795cd5ba6ff1f0288e9379'
 };
