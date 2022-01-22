@@ -15,6 +15,7 @@ Esta aplicación permite consultar  el clima de una ciudad, y mostrar la tempera
 - Correr ng serve -o 
 -- NOTA ANTES DE CORRER LA APP DE FRONTEND DEBE ESTAR CORRIERDO LA DEL BACKEND
 -- backend => https://github.com/yornipaz/weatherApp-backend
+-- Crear un usuario en el apartado de registro para poder ingresar ala aplicacion 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.13.
 
